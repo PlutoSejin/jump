@@ -48,7 +48,7 @@ void draw() {
 	locateObject(player, scene2, 590 + x, y - screenY + 345);
 	locateObject(ground, scene2, 0, 120 - screenY);
 	for (int i = 0; i < 6; i++) {
-		locateObject(traps[i], scene2, arr[i] ? 857 : 400, (t + i) * 160 - screenY + 360);
+		locateObject(traps[i], scene2, arr[i] ? 857 : 398, (t + i) * 160 - screenY + 360);
 	}
 }
 
