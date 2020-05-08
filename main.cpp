@@ -1,11 +1,7 @@
-#include <Bangtal.h>
-#include <windows.h>
+#include <bangtal.h>
 #include <stdlib.h>
 #include <time.h>
-#include <process.h>
 #include <stdio.h>
-
-#pragma comment(lib,"Bangtal.lib")
 
 #define TPS 50
 #define G 3
@@ -162,11 +158,11 @@ int main() {
 	scene1 = createScene("main", "Images/background.png");
 
 
-	title = createObject("title", "Images/title.png");
+	title = createObject("Images/title.png");
 	locateObject(title, scene1, 360, 400);
 	showObject(title);
 
-	button1 = createObject("button1", "Images/button1.png");
+	button1 = createObject("Images/button1.png");
 	locateObject(button1, scene1, 451, 100);
 	showObject(button1);
 	
@@ -175,33 +171,33 @@ int main() {
 	scene2 = createScene("game", "Images/background.png");
 
 
-	wall1 = createObject("wall1", "Images/wall.png");
+	wall1 = createObject("Images/wall.png");
 	locateObject(wall1, scene2, 0, 0);
 	showObject(wall1);
 
-	wall2 = createObject("wall2", "Images/wall.png");
+	wall2 = createObject("Images/wall.png");
 	locateObject(wall2, scene2, 880, 0);
 	showObject(wall2);
 
-	ground = createObject("ground", "Images/ground.png");
+	ground = createObject("Images/ground.png");
 	locateObject(ground, scene2, 0, 0);
 	showObject(ground);
 
-	player = createObject("player", "Images/player_sit_right.png");
+	player = createObject("Images/player_sit_right.png");
 	locateObject(player, scene2, 620, 100);
 	showObject(player);
 
 
-	button2 = createObject("button2", "Images/button2.png");
+	button2 = createObject("Images/button2.png");
 	locateObject(button2, scene2, 900, 100);
 	showObject(button2);
 
-	button3 = createObject("button3", "Images/button3.png");
+	button3 = createObject("Images/button3.png");
 	locateObject(button3, scene2, 1000, 100);
 	showObject(button3);
 
 	for (int i = 0; i < 6; i++) {
-		traps[i] = createObject("trap", "trap_left.png");
+		traps[i] = createObject("trap_left.png");
 		showObject(traps[i]);
 	}
 
@@ -209,11 +205,11 @@ int main() {
 
 	scene3 = createScene("game over", "Images/background.png");
 
-	game_over = createObject("game_over", "Images/game_over.png");
+	game_over = createObject("Images/game_over.png");
 	locateObject(game_over, scene3, 360, 400);
 	showObject(game_over);
 
-	button4 = createObject("button4", "Images/button4.png");
+	button4 = createObject("Images/button4.png");
 	locateObject(button4, scene3, 584, 160);
 	showObject(button4);
 
